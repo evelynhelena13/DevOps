@@ -1,1 +1,76 @@
-Hello Van de som
+<!Doctype html>
+<html>
+    <head>
+       <meta charset= "utf-8">
+	   <title>  formulário </title>
+    </head>
+    <body style="background:#F0F8FF">
+        <h3> formulários é nois </h3>
+        <!-- action envia dados para o admistrador -->
+        <!-- o metodo get nao é seguro-->
+        <!--- melhor usar o metodo post-->
+        <!-- o size aumenta ou diminue o tramanho do campo e o  maxlength determina o numero de caracter-->
+        <!-- o type submit cria um botao enviar e o value muda o nome do botão-->
+        <form action="servidor" method="POST">
+            <label>Nome2:</label><br/><!-- cria o campo -->
+            <input type="text" 
+                  name="nome" 
+                  id="nome_user" 
+                  maxlength="20"
+                  placeholder="Digite o nome" 
+                  size="50"
+                  required><p> 
+            <label>Sobrenome:</label><br/>
+            <input type="text" maxlength="20" placeholder="Digite o Sobrenome" size="50" required><p>
+             
+            
+        
+            <label>Senhao8td:</label><br/>
+            <input type="password" 
+            name="senha" 
+            id="senha_user" 
+            maxlength="8" placeholder="Digite a senha ">
+            <!---value="evelyn" o value inclue um valor padrao-->
+            <p>
+            <label> E-mail </label><br/>
+            <input type="email" name="email" placeholder="Digite o E-mail"><p> <!-- cria um campo para o email e verifica de tem o @-->
+           
+            <label> Mensagem</label><br/>
+            <textarea> Digite um comentário manooooooo </textarea><p><!--inclue um bloco para digitação -->
+            <label> Estado:</label>
+            <select>
+                <option>selecione</option>
+                <option>São Paulo sp manooooo</option>
+                <option>Rio de Janeiro</option>
+                <option>Minas Gerais</option>
+                <option>Espirito Santo</option>
+            
+            </select><p>
+            <br/>
+            <label> Selecione a Disciplina </label><br/>
+            <input type="checkbox" value="Tecw"> Tec Web<br/><!-- cria caixar para marcar uma opição -->
+            <input type="checkbox" value="devops"> DevOps<br/>
+            <input type="checkbox" value="Lp2"> Lp2<br/><p>
+
+            <label> Selecione a linguagem </label><br/>
+            <input type="radio" name="opcao" value="Java"> Java<br/><!-- cria caixar para marcar uma opição uma vez selecionado não desmarca mais -->
+            <input type="radio" name="opcao" value="Py"> Python<br/><!-- name="opicao" foi usada para que apenas uma opição seja marcada-->
+            <input type="radio" name="opcao" value="c#"> C#<br/>
+            
+            
+
+            <input type="submit" value="Enviar Agora">
+            <button type="submit" value="Enviar">Enviar</button><!-- cria um botão-->
+            <button type="reset" value="limpar">limpar tudooo </button><br/><!-- cria um botão para limpar o formulário-->
+            <button onclick="">Botão</button>
+
+            
+            
+
+
+            
+       
+        </form>
+	
+    <body>
+</html>
